@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+    <title>Deliver Aid - Relief & Rescue Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Relief<span>&Rescue</span></a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="sos-alerts.html">SOS Alerts</a></li>
+                    <li><a href="ambulance-critical-care.html">Ambulance & Critical Care</a></li>
+                    <li><a href="hospital-icu-beds.html">Hospital & ICU Beds</a></li>
+                    <li><a href="find-safe-shelters.html">Find Safe Shelters</a></li>
+                    <li><a href="live-disaster-map.html">Live Disaster Map</a></li>
+                    <li><a href="find-missing-people.html">Find Missing People</a></li>
+                    <li><a href="donate-blood.html">Donate Blood</a></li>
+                    <li><a href="be-a-volunteer.html">Be a Volunteer</a></li>
+                    <li><a href="deliver-aid.html">Deliver Aid</a></li>
+                    <li><a href="essential-supplies-medical-aid.html">Essential Supplies & Medical Aid</a></li>
+                    <li><a href="crowdfund-for-help.html">Crowdfund for Help</a></li>
+                    <li><a href="community-donation-hubs.html">Community Donation Hubs</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="signup-btn" id="signup-button">Sign Up</button>
+    </header>
+
+    <section class="hero">
+        <h1>Deliver Aid</h1>
+        <p>Help transport essential supplies to those in need during emergencies.</p>
+    </section>
+
+    <section class="services" id="deliver-aid">
+        <h2 class="section-title">Aid Delivery</h2>
+        <div class="services-grid">
+            <div class="service-category">
+                <h3 class="category-title">Join the Team</h3>
+                <p>Sign up as a volunteer with logistics skills to assist in aid distribution.</p>
+            </div>
+            <div class="service-category">
+                <h3 class="category-title">Aid Routes</h3>
+                <p>Coordinate with our network to deliver supplies to shelters and disaster zones.</p>
+            </div>
+            <div class="service-category">
+                <h3 class="category-title">Impact</h3>
+                <p>Ensure food, water, and medical aid reach affected communities quickly.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">×</span>
+            <h3 class="modal-title">Join Our Network</h3>
+            <div class="user-type">
+                <div class="type-btn" data-type="volunteer">Volunteer</div>
+                <div class="type-btn" data-type="donor">Donor</div>
+                <div class="type-btn" data-type="organization">Organization</div>
+            </div>
+            <form class="signup-form" id="volunteer-form">
+                <div class="benefits">
+                    <h4>Volunteer Benefits</h4>
+                    <ul>
+                        <li>Direct impact on affected communities</li>
+                        <li>Training opportunities in disaster response</li>
+                        <li>Certificate of recognition for your service</li>
+                        <li>Join a community of dedicated helpers</li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-name">Full Name</label>
+                    <input type="text" id="volunteer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-email">Email Address</label>
+                    <input type="email" id="volunteer-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-phone">Phone Number</label>
+                    <input type="tel" id="volunteer-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-skills">Skills/Expertise</label>
+                    <select id="volunteer-skills" required>
+                        <option value="">Select your skills</option>
+                        <option value="medical">Medical Professional</option>
+                        <option value="rescue">Rescue Operations</option>
+                        <option value="logistics">Logistics & Transportation</option>
+                        <option value="counseling">Counseling & Mental Health</option>
+                        <option value="general">General Assistance</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Register as Volunteer</button>
+            </form>
+            <form class="signup-form" id="donor-form">
+                <div class="benefits">
+                    <h4>Donor Benefits</h4>
+                    <ul>
+                        <li>Tax-deductible donations</li>
+                        <li>Regular updates on how your support helps</li>
+                        <li>Option to direct funds to specific causes</li>
+                        <li>Recognition in our annual report (optional)</li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="donor-name">Full Name/Organization</label>
+                    <input type="text" id="donor-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="donor-email">Email Address</label>
+                    <input type="email" id="donor-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="donor-phone">Phone Number</label>
+                    <input type="tel" id="donor-phone">
+                </div>
+                <div class="form-group">
+                    <label for="donor-type">Donation Type</label>
+                    <select id="donor-type" required>
+                        <option value="">Select donation type</option>
+                        <option value="monetary">Monetary Donation</option>
+                        <option value="supplies">Essential Supplies</option>
+                        <option value="blood">Blood Donation</option>
+                        <option value="equipment">Medical Equipment</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Register as Donor</button>
+            </form>
+            <form class="signup-form" id="organization-form">
+                <div class="benefits">
+                    <h4>Organization Benefits</h4>
+                    <ul>
+                        <li>Network with other relief organizations</li>
+                        <li>Access to trained volunteers</li>
+                        <li>Coordination during emergency responses</li>
+                        <li>Visibility for your organization's efforts</li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="org-name">Organization Name</label>
+                    <input type="text" id="org-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="org-type">Organization Type</label>
+                    <select id="org-type" required>
+                        <option value="">Select organization type</option>
+                        <option value="ngo">NGO/Non-profit</option>
+                        <option value="hospital">Hospital/Medical Facility</option>
+                        <option value="government">Government Agency</option>
+                        <option value="corporate">Corporate CSR</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="org-contact">Contact Person</label>
+                    <input type="text" id="org-contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="org-email">Official Email</label>
+                    <input type="email" id="org-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="org-phone">Contact Number</label>
+                    <input type="tel" id="org-phone" required>
+                </div>
+                <button type="submit" class="submit-btn">Register Organization</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <p class="copyright">© 2025 Relief & Rescue Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

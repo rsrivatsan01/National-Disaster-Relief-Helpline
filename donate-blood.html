@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Blood - Relief & Rescue Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #d9534f;
+            border-bottom: 2px solid #d9534f;
+            padding-bottom: 5px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #c9302c;
+        }
+        .go-back {
+            margin-top: 10px;
+            background: #6c757d;
+        }
+        .go-back:hover {
+            background: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Relief<span>&Rescue</span></a>
+    </header>
+    <div class="container">
+        <h2>Personal Information</h2>
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Gender</label>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+            <option>Trans</option>
+        </select>
+
+        <label>Blood Group</label>
+        <select>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+        
+        <h2>Contact Information</h2>
+        <label>Phone Number</label>
+        <input type="tel" required>
+
+        <label>Email Address</label>
+        <input type="email" required>
+
+        <label>Residential Address</label>
+        <textarea rows="3"></textarea>
+        
+        <h2>Health & Eligibility Questions</h2>
+        <label>Recent Illnesses or Infections</label>
+        <textarea rows="2"></textarea>
+
+        <label>Any Medications Currently Taken</label>
+        <textarea rows="2"></textarea>
+
+        <label>Any History of Blood Transfusion (Last 6 Months)</label>
+        <select>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Recent International Travel</label>
+        <textarea rows="2"></textarea>
+
+        <label>Smoking, Alcohol Consumption, or Empty Stomach</label>
+        <textarea rows="2"></textarea>
+
+        <label>Recent Vaccinations</label>
+        <textarea rows="2"></textarea>
+
+        <label>Chronic Diseases (Diabetes, Hypertension, Heart Disease, etc.)</label>
+        <textarea rows="2"></textarea>
+
+        <label>Previous Blood Donation (Last Donation Date)</label>
+        <input type="date">
+
+        <label>Pregnancy Status (if applicable)</label>
+        <select>
+            <option>N/A</option>
+            <option>Pregnant</option>
+            <option>Not Pregnant</option>
+        </select>
+        
+        <h2>Donation Preferences</h2>
+        <label>Preferred Donation Type</label>
+        <select>
+            <option>Whole Blood</option>
+            <option>Plasma</option>
+            <option>Platelets</option>
+        </select>
+
+        <label>Availability for Donation (Preferred Date & Time)</label>
+        <input type="datetime-local">
+
+        <label>Emergency Availability</label>
+        <select>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Preferred Donation Center</label>
+        <textarea rows="2"></textarea>
+
+        <button type="submit">Submit</button>
+        <button class="go-back" onclick="window.history.back();">Go Back</button>
+    </div>
+    <button class="go-back" onclick="window.location.href='index.html';">Go Back</button>
+</body>
+</html>

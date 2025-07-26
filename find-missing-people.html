@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Missing People - Relief & Rescue Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Report a Missing Person</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label>Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label>Height:</label>
+            <div style="display: flex; gap: 10px;">
+                <input type="number" name="height_feet" placeholder="Feet" required>
+                <input type="number" name="height_inches" placeholder="Inches" required>
+            </div>
+            
+            <label for="eye_color">Eye Color:</label>
+            <input type="text" id="eye_color" name="eye_color" required>
+            
+            <label for="hair_color">Hair Color & Type:</label>
+            <input type="text" id="hair_color" name="hair_color" required>
+            
+            <label for="skin_color">Skin Color:</label>
+            <select id="skin_color" name="skin_color" required>
+                <option value="fair">Fair</option>
+                <option value="wheatish">Wheatish</option>
+                <option value="dusky">Dusky</option>
+                <option value="dark">Dark</option>
+            </select>
+            
+            <label for="identifying_marks">Identifying Marks (Scars, Tattoos, etc.):</label>
+            <input type="text" id="identifying_marks" name="identifying_marks">
+            
+            <label for="medical_conditions">Medical Conditions:</label>
+            <input type="text" id="medical_conditions" name="medical_conditions">
+            
+            <label for="dress_color">Color of Upper Dress:</label>
+            <input type="text" id="dress_color" name="dress_color" required>
+            
+            <label for="lower_dress_color">Color of Lower Dress:</label>
+            <input type="text" id="lower_dress_color" name="lower_dress_color" required>
+            
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            
+            <label for="last_seen">Last Seen Location:</label>
+            <input type="text" id="last_seen" name="last_seen" required>
+            
+            <label for="last_seen_time">Last Seen Time:</label>
+            <input type="datetime-local" id="last_seen_time" name="last_seen_time" required>
+            
+            <label for="mode_of_travel">Mode of Travel (if known):</label>
+            <input type="text" id="mode_of_travel" name="mode_of_travel">
+            
+            <label for="description">Additional Description:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+            
+            <label for="contact">Your Contact Details:</label>
+            <input type="text" id="contact" name="contact" placeholder="Phone or Email" required>
+            
+            <label for="emergency_contact">Emergency Contact Person:</label>
+            <input type="text" id="emergency_contact" name="emergency_contact" placeholder="Phone or Email">
+            
+            <label for="reward">Reward for Information (if any):</label>
+            <select id="reward" name="reward">
+                <option value="none">No Reward</option>
+                <option value="10000">₹10,000</option>
+                <option value="15000">₹15,000</option>
+                <option value="20000">₹20,000</option>
+                <option value="25000">₹25,000</option>
+                <option value="other">Other (Specify in Description)</option>
+            </select>
+            
+            <label for="police_report">Police Report Filed?</label>
+            <input type="text" id="police_report" name="police_report" placeholder="Yes/No and Reference Number">
+            
+            <button type="submit">Submit Report</button>
+            <button class="go-back" onclick="window.location.href='index.html';">Go Back</button>
+        </form>
+    </div>
+</body>
+</html>

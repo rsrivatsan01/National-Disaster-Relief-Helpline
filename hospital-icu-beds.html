@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <title>Hospital & ICU Beds - Relief & Rescue Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Relief<span>&Rescue</span></a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="sos-alerts.html">SOS Alerts</a></li>
+                    <li><a href="ambulance-critical-care.html">Ambulance & Critical Care</a></li>
+                    <li><a href="hospital-icu-beds.html">Hospital & ICU Beds</a></li>
+                    <li><a href="#">Shelter & Safety</a></li>
+                    <li><a href="#">Volunteering</a></li>
+                    <li><a href="#">Donations</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="signup-btn" id="signup-button">Sign Up</button>
+    </header>
+
+    <section class="hero">
+        <h1>Hospital & ICU Beds</h1>
+        <p>Find available hospital beds and ICU units during emergencies.</p>
+    </section>
+
+    <section class="services" id="hospital-icu-beds">
+        <h2 class="section-title">Hospital Bed Availability</h2>
+        <div class="services-grid">
+            <div class="service-category">
+                <h3 class="category-title">Locate Beds</h3>
+                <p>Check real-time availability of hospital beds and ICU units in your region through our network.</p>
+            </div>
+            <div class="service-category">
+                <h3 class="category-title">Partner Hospitals</h3>
+                <p>We collaborate with registered medical facilities to ensure accurate bed counts and swift admissions.</p>
+            </div>
+            <div class="service-category">
+                <h3 class="category-title">Get Assistance</h3>
+                <p>Contact our team or sign up as an organization to coordinate bed allocation during a crisis.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">×</span>
+            <h3 class="modal-title">Join Our Network</h3>
+            <div class="user-type">
+                <div class="type-btn" data-type="volunteer">Volunteer</div>
+                <div class="type-btn" data-type="donor">Donor</div>
+                <div class="type-btn" data-type="organization">Organization</div>
+            </div>
+            <form class="signup-form" id="volunteer-form">
+                <div class="benefits">
+                    <h4>Volunteer Benefits</h4>
+                    <ul>
+                        <li>Direct impact on affected communities</li>
+                        <li>Training opportunities in disaster response</li>
+                        <li>Certificate of recognition for your service</li>
+                        <li>Join a community of dedicated helpers</li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-name">Full Name</label>
+                    <input type="text" id="volunteer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-email">Email Address</label>
+                    <input type="email" id="volunteer-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-phone">Phone Number</label>
+                    <input type="tel" id="volunteer-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-skills">Skills/Expertise</label>
+                    <select id="volunteer-skills" required>
+                        <option value="">Select your skills</option>
+                        <option value="medical">Medical Professional</option>
+                        <option value="rescue">Rescue Operations</option>
+                        <option value="logistics">Logistics & Transportation</option>
+                        <option value="counseling">Counseling & Mental Health</option>
+                        <option value="general">General Assistance</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Register as Volunteer</button>
+            </form>
+            <form class="signup-form" id="donor-form">
+                <div class="benefits">
+                    <h4>Donor Benefits</h4>
+                    <ul>
+                        <li>Tax-deductible donations</li>
+                        <li>Regular updates on how your support helps</li>
+                        <li>Option to direct funds to specific causes</li>
+                        <li>Recognition in our annual report (optional)</li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="donor-name">Full Name/Organization</label>
+                    <input type="text" id="donor-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="donor-email">Email Address</label>
+                    <input type="email" id="donor-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="donor-phone">Phone Number</label>
+                    <input type="tel" id="donor-phone">
+                </div>
+                <div class="form-group">
+                    <label for="donor-type">Donation Type</label>
+                    <select id="donor-type" required>
+                        <option value="">Select donation type</option>
+                        <option value="monetary">Monetary Donation</option>
+                        <option value="supplies">Essential Supplies</option>
+                        <option value="blood">Blood Donation</option>
+                        <option value="equipment">Medical Equipment</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Register as Donor</button>
+            </form>
+            <form class="signup-form" id="organization-form">
+                <div class="benefits">
+                    <h4>Organization Benefits</h4>
+                    <ul>
+                        <li>Network with other relief organizations</li>
+                        <li>Access to trained volunteers</li>
+                        <li>Coordination during emergency responses</li organizaciones
+
+---
+
+### Update `index.html` Services Section
+Update the "Rescue & Medical Help" category in `index.html` to link to these new pages:
+
+```html
+<div class="service-category">
+    <h3 class="category-title">Rescue & Medical Help</h3>
+    <ul class="service-list">
+        <li class="service-item"><a href="sos-alerts.html">SOS Alerts</a></li>
+        <li class="service-item"><a href="ambulance-critical-care.html">Ambulance & Critical Care</a></li>
+        <li class="service-item"><a href="hospital-icu-beds.html">Hospital & ICU Beds</a></li>
+    </ul>
+</div>
